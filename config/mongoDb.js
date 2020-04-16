@@ -6,9 +6,6 @@ mongoose.connect('mongodb://localhost:27017/blog', {
     useCreateIndex: true,
     useUnifiedTopology: true,
 }, (err) => {
-    if (!err) {
-        console.log('MongoDB Connection Succeeded.')
-    } else {
-        console.error('Error in DB connection: ' + err)
-    }
+    if (err) { throw new err }
+    console.log('MongoDB Connection Succeeded.')
 });

@@ -1,20 +1,22 @@
 <html>
-
-<body>
-  <div class="signup-form">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-dark text-white">
+  <div class="container signup-form mt-4">
     <form action="signin" method="post">
       <h2>Login</h2>
       <p class="hint-text">No account ? Create your account. It's free and only takes a minute. <a href="/signup">
           register</a></p>
 
-      <div class="form-group">
+      <div class="form-group mt-4">
         <input type="text" class="form-control" name="name" placeholder="name" required="required">
       </div>
-      <div class="form-group">
+      <div class="form-group mt-4">
         <input type="password" class="form-control" name="password" placeholder="Password" required="required">
       </div>
 
-      <div class="form-group">
+      <div class="form-group mt-4">
         <button type="submit" class="btn btn-success btn-lg btn-block">Login Now</button>
       </div>
     </form>
